@@ -36,10 +36,10 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel3" alignment="0" pref="616" max="32767" attributes="0"/>
-          <Component id="jPanel2" alignment="0" pref="616" max="32767" attributes="0"/>
-          <Component id="jPanel1" alignment="0" pref="616" max="32767" attributes="0"/>
-          <Component id="jPanel4" alignment="1" pref="616" max="32767" attributes="0"/>
+          <Component id="jPanel3" alignment="0" pref="840" max="32767" attributes="0"/>
+          <Component id="jPanel2" alignment="0" pref="840" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" pref="840" max="32767" attributes="0"/>
+          <Component id="jPanel4" alignment="1" pref="840" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -154,8 +154,11 @@
       <SubComponents>
         <Component class="javax.swing.JSlider" name="SliderPolA1">
           <Properties>
-            <Property name="maximum" type="int" value="300"/>
+            <Property name="majorTickSpacing" type="int" value="50"/>
+            <Property name="maximum" type="int" value="350"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" value="25"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -169,7 +172,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -184,8 +190,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="50"/>
             <Property name="maximum" type="int" value="300"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -199,8 +208,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="15"/>
             <Property name="maximum" type="int" value="75"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="15"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -215,7 +227,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -252,8 +267,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderBarA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
             <Property name="maximum" type="int" value="120"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="20"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -268,7 +286,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -293,9 +314,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderLixo1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="30"/>
             <Property name="maximum" type="int" value="250"/>
+            <Property name="minorTickSpacing" type="int" value="15"/>
             <Property name="paintLabels" type="boolean" value="true"/>
-            <Property name="value" type="int" value="0"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                 <TitledBorder title="Quantidade de Lixo"/>
@@ -327,7 +350,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="jSliderAgenteA1">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="3"/>
             <Property name="maximum" type="int" value="30"/>
+            <Property name="minorTickSpacing" type="int" value="2"/>
+            <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="5+(int)(25 * Math.random())" type="code"/>
             </Property>
@@ -454,8 +481,11 @@
       <SubComponents>
         <Component class="javax.swing.JSlider" name="SliderPolA2">
           <Properties>
-            <Property name="maximum" type="int" value="300"/>
+            <Property name="majorTickSpacing" type="int" value="50"/>
+            <Property name="maximum" type="int" value="350"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" value="25"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -469,7 +499,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -484,8 +517,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="50"/>
             <Property name="maximum" type="int" value="300"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -499,8 +535,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="15"/>
             <Property name="maximum" type="int" value="75"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="15"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -515,7 +554,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -552,8 +594,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderBarA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
             <Property name="maximum" type="int" value="120"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="20"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -568,7 +613,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -593,9 +641,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderLixo2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="30"/>
             <Property name="maximum" type="int" value="250"/>
+            <Property name="minorTickSpacing" type="int" value="15"/>
             <Property name="paintLabels" type="boolean" value="true"/>
-            <Property name="value" type="int" value="0"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                 <TitledBorder title="Quantidade de Lixo"/>
@@ -627,7 +677,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="jSliderAgenteA2">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="3"/>
             <Property name="maximum" type="int" value="30"/>
+            <Property name="minorTickSpacing" type="int" value="2"/>
+            <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="5+(int)(25 * Math.random())" type="code"/>
             </Property>
@@ -753,8 +807,11 @@
       <SubComponents>
         <Component class="javax.swing.JSlider" name="SliderPolA3">
           <Properties>
-            <Property name="maximum" type="int" value="300"/>
+            <Property name="majorTickSpacing" type="int" value="50"/>
+            <Property name="maximum" type="int" value="350"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" value="25"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -768,7 +825,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -783,8 +843,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="50"/>
             <Property name="maximum" type="int" value="300"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -798,8 +861,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="15"/>
             <Property name="maximum" type="int" value="75"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="15"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -814,7 +880,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -851,8 +920,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderBarA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
             <Property name="maximum" type="int" value="120"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="20"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -867,7 +939,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -892,9 +967,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderLixo3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="30"/>
             <Property name="maximum" type="int" value="250"/>
+            <Property name="minorTickSpacing" type="int" value="15"/>
             <Property name="paintLabels" type="boolean" value="true"/>
-            <Property name="value" type="int" value="0"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                 <TitledBorder title="Quantidade de Lixo"/>
@@ -926,7 +1003,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="jSliderAgenteA3">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="3"/>
             <Property name="maximum" type="int" value="30"/>
+            <Property name="minorTickSpacing" type="int" value="2"/>
+            <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="5+(int)(25 * Math.random())" type="code"/>
             </Property>
@@ -1052,8 +1133,11 @@
       <SubComponents>
         <Component class="javax.swing.JSlider" name="SliderPolA4">
           <Properties>
-            <Property name="maximum" type="int" value="300"/>
+            <Property name="majorTickSpacing" type="int" value="50"/>
+            <Property name="maximum" type="int" value="350"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" value="25"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -1067,7 +1151,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1082,8 +1169,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="50"/>
             <Property name="maximum" type="int" value="300"/>
+            <Property name="minorTickSpacing" type="int" value="25"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -1097,8 +1187,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="15"/>
             <Property name="maximum" type="int" value="75"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="15"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1113,7 +1206,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1150,8 +1246,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderBarA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
             <Property name="maximum" type="int" value="120"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="20"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1166,7 +1265,10 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1191,9 +1293,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderLixo4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="30"/>
             <Property name="maximum" type="int" value="250"/>
+            <Property name="minorTickSpacing" type="int" value="15"/>
             <Property name="paintLabels" type="boolean" value="true"/>
-            <Property name="value" type="int" value="0"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                 <TitledBorder title="Quantidade de Lixo"/>
@@ -1225,7 +1329,11 @@
         </Component>
         <Component class="javax.swing.JSlider" name="jSliderAgenteA4">
           <Properties>
+            <Property name="majorTickSpacing" type="int" value="3"/>
             <Property name="maximum" type="int" value="30"/>
+            <Property name="minorTickSpacing" type="int" value="2"/>
+            <Property name="paintLabels" type="boolean" value="true"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="5+(int)(25 * Math.random())" type="code"/>
             </Property>
