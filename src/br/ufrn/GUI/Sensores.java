@@ -13,11 +13,14 @@ import br.ufrn.controlers.ConcreteAtualizarInformaçõesDeContexto;
  */
 public class Sensores extends javax.swing.JFrame {
 
+    random setaValores;
+
     /**
      * Creates new form Sensores
      */
     public Sensores() {
         initComponents();
+
     }
 
     /**
@@ -97,6 +100,7 @@ public class Sensores extends javax.swing.JFrame {
         ComboBoxAge4 = new javax.swing.JComboBox();
         jLabel8 = new javax.swing.JLabel();
         jSliderAgenteA4 = new javax.swing.JSlider();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -129,9 +133,8 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderFluxA1.setMajorTickSpacing(50);
-        SliderFluxA1.setMaximum(300);
-        SliderFluxA1.setMinorTickSpacing(25);
+        SliderFluxA1.setMajorTickSpacing(20);
+        SliderFluxA1.setMinorTickSpacing(10);
         SliderFluxA1.setPaintLabels(true);
         SliderFluxA1.setPaintTicks(true);
         SliderFluxA1.setToolTipText("");
@@ -156,8 +159,9 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderTempA1.setMajorTickSpacing(20);
-        SliderTempA1.setMinorTickSpacing(10);
+        SliderTempA1.setMajorTickSpacing(10);
+        SliderTempA1.setMaximum(50);
+        SliderTempA1.setMinorTickSpacing(5);
         SliderTempA1.setPaintLabels(true);
         SliderTempA1.setPaintTicks(true);
         SliderTempA1.setToolTipText("");
@@ -354,9 +358,8 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderFluxA2.setMajorTickSpacing(50);
-        SliderFluxA2.setMaximum(300);
-        SliderFluxA2.setMinorTickSpacing(25);
+        SliderFluxA2.setMajorTickSpacing(20);
+        SliderFluxA2.setMinorTickSpacing(10);
         SliderFluxA2.setPaintLabels(true);
         SliderFluxA2.setPaintTicks(true);
         SliderFluxA2.setToolTipText("");
@@ -381,8 +384,9 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderTempA2.setMajorTickSpacing(20);
-        SliderTempA2.setMinorTickSpacing(10);
+        SliderTempA2.setMajorTickSpacing(10);
+        SliderTempA2.setMaximum(50);
+        SliderTempA2.setMinorTickSpacing(5);
         SliderTempA2.setPaintLabels(true);
         SliderTempA2.setPaintTicks(true);
         SliderTempA2.setToolTipText("");
@@ -580,9 +584,8 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderFluxA3.setMajorTickSpacing(50);
-        SliderFluxA3.setMaximum(300);
-        SliderFluxA3.setMinorTickSpacing(25);
+        SliderFluxA3.setMajorTickSpacing(20);
+        SliderFluxA3.setMinorTickSpacing(10);
         SliderFluxA3.setPaintLabels(true);
         SliderFluxA3.setPaintTicks(true);
         SliderFluxA3.setToolTipText("");
@@ -607,8 +610,9 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderTempA3.setMajorTickSpacing(20);
-        SliderTempA3.setMinorTickSpacing(10);
+        SliderTempA3.setMajorTickSpacing(10);
+        SliderTempA3.setMaximum(50);
+        SliderTempA3.setMinorTickSpacing(5);
         SliderTempA3.setPaintLabels(true);
         SliderTempA3.setPaintTicks(true);
         SliderTempA3.setToolTipText("");
@@ -805,9 +809,8 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderFluxA4.setMajorTickSpacing(50);
-        SliderFluxA4.setMaximum(300);
-        SliderFluxA4.setMinorTickSpacing(25);
+        SliderFluxA4.setMajorTickSpacing(20);
+        SliderFluxA4.setMinorTickSpacing(10);
         SliderFluxA4.setPaintLabels(true);
         SliderFluxA4.setPaintTicks(true);
         SliderFluxA4.setToolTipText("");
@@ -832,8 +835,9 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderTempA4.setMajorTickSpacing(20);
-        SliderTempA4.setMinorTickSpacing(10);
+        SliderTempA4.setMajorTickSpacing(10);
+        SliderTempA4.setMaximum(50);
+        SliderTempA4.setMinorTickSpacing(5);
         SliderTempA4.setPaintLabels(true);
         SliderTempA4.setPaintTicks(true);
         SliderTempA4.setToolTipText("");
@@ -1001,6 +1005,13 @@ public class Sensores extends javax.swing.JFrame {
                 .addComponent(jSliderAgenteA4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jButton1.setText("Randomizar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1013,13 +1024,21 @@ public class Sensores extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(387, 387, 387)
+                .addComponent(jButton1))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 840, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
-            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -1192,12 +1211,12 @@ public class Sensores extends javax.swing.JFrame {
 
     private void SliderLixo1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo1StateChanged
         atualizar.atualizarQuantidadeLixo(1, SliderLixo1.getValue());
-        if (SliderLixo1.getValue() == 250 && (jSliderAgenteA1.getValue() == 0 || jSliderAgenteA2.getValue() == 0 || jSliderAgenteA3.getValue() == 0 || jSliderAgenteA4.getValue() == 0)) {
+        if (SliderLixo1.getValue() == 250 && jSliderAgenteA1.getValue() == 0) {
             SliderLixo1.setValue(0);
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
 
         }
     }//GEN-LAST:event_SliderLixo1StateChanged
@@ -1206,34 +1225,34 @@ public class Sensores extends javax.swing.JFrame {
         atualizar.atualizarQuantidadeLixo(2, SliderLixo2.getValue());
         if (SliderLixo2.getValue() == 250 && (jSliderAgenteA1.getValue() == 0 || jSliderAgenteA2.getValue() == 0 || jSliderAgenteA3.getValue() == 0 || jSliderAgenteA4.getValue() == 0)) {
             SliderLixo2.setValue(0);
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
 
         }
     }//GEN-LAST:event_SliderLixo2StateChanged
 
     private void SliderLixo3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo3StateChanged
         atualizar.atualizarQuantidadeLixo(3, SliderLixo3.getValue());
-        if (SliderLixo1.getValue() == 250 && (jSliderAgenteA1.getValue() == 0 || jSliderAgenteA2.getValue() == 0 || jSliderAgenteA3.getValue() == 0 || jSliderAgenteA4.getValue() == 0)) {
-            SliderLixo1.setValue(0);
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
+        if (SliderLixo3.getValue() == 250 && (jSliderAgenteA1.getValue() == 0 || jSliderAgenteA2.getValue() == 0 || jSliderAgenteA3.getValue() == 0 || jSliderAgenteA4.getValue() == 0)) {
+            SliderLixo3.setValue(0);
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
 
         }
     }//GEN-LAST:event_SliderLixo3StateChanged
 
     private void SliderLixo4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo4StateChanged
         atualizar.atualizarQuantidadeLixo(4, SliderLixo4.getValue());
-        if (SliderLixo1.getValue() == 250 && (jSliderAgenteA1.getValue() == 0 || jSliderAgenteA2.getValue() == 0 || jSliderAgenteA3.getValue() == 0 || jSliderAgenteA4.getValue() == 0)) {
-            SliderLixo1.setValue(0);
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
-            jSliderAgenteA1.setValue(5 + 25 * (int) Math.random());
+        if (SliderLixo4.getValue() == 250 && (jSliderAgenteA1.getValue() == 0 || jSliderAgenteA2.getValue() == 0 || jSliderAgenteA3.getValue() == 0 || jSliderAgenteA4.getValue() == 0)) {
+            SliderLixo4.setValue(0);
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
 
         }
     }//GEN-LAST:event_SliderLixo4StateChanged
@@ -1260,20 +1279,93 @@ public class Sensores extends javax.swing.JFrame {
 
     private void jSliderAgenteA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA1StateChanged
         atualizar.atualizarDistanciaAgente(1, jSliderAgenteA1.getValue());
+        if (SliderLixo1.getValue() == 250 && jSliderAgenteA1.getValue() == 0) {
+            SliderLixo1.setValue(0);
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
+
+        }
     }//GEN-LAST:event_jSliderAgenteA1StateChanged
 
     private void jSliderAgenteA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA2StateChanged
         atualizar.atualizarDistanciaAgente(2, jSliderAgenteA2.getValue());
+        if (SliderLixo2.getValue() == 250 && jSliderAgenteA2.getValue() == 0) {
+            SliderLixo2.setValue(0);
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
+
+        }
     }//GEN-LAST:event_jSliderAgenteA2StateChanged
 
     private void jSliderAgenteA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA3StateChanged
         atualizar.atualizarDistanciaAgente(3, jSliderAgenteA3.getValue());
+        if (SliderLixo3.getValue() == 250 && jSliderAgenteA3.getValue() == 0) {
+            SliderLixo3.setValue(0);
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
+
+        }
     }//GEN-LAST:event_jSliderAgenteA3StateChanged
 
     private void jSliderAgenteA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA4StateChanged
         atualizar.atualizarDistanciaAgente(4, jSliderAgenteA4.getValue());
+        if (SliderLixo4.getValue() == 250 && jSliderAgenteA4.getValue() == 0) {
+            SliderLixo4.setValue(0);
+            jSliderAgenteA1.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA2.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA3.setValue(5 + (int) (25 * Math.random()));
+            jSliderAgenteA4.setValue(5 + (int) (25 * Math.random()));
+
+        }
     }//GEN-LAST:event_jSliderAgenteA4StateChanged
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+
+            int teste = SliderBarA1.getValue();
+            int teste2 = setaValores.randomizarBarulho(teste);
+            SliderBarA1.setValue(teste2);
+            System.out.println("" + SliderBarA1.getValue());
+//        SliderBarA1.setValue(5 + (int) (120 * Math.random()));
+//        SliderBarA2.setValue(5 + (int) (120 * Math.random()));
+//        SliderBarA3.setValue(5 + (int) (120 * Math.random()));
+//        SliderBarA4.setValue(5 + (int) (120 * Math.random()));
+//        SliderChuvA1.setValue(5 + (int) (100 * Math.random()));
+//        SliderChuvA2.setValue(5 + (int) (100 * Math.random()));
+//        SliderChuvA3.setValue(5 + (int) (100 * Math.random()));
+//        SliderChuvA4.setValue(5 + (int) (100 * Math.random()));
+//        SliderFluxA1.setValue(5 + (int) (300 * Math.random()));
+//        SliderFluxA2.setValue(5 + (int) (300 * Math.random()));
+//        SliderFluxA3.setValue(5 + (int) (300 * Math.random()));
+//        SliderFluxA4.setValue(5 + (int) (300 * Math.random()));
+//        SliderLixo1.setValue(70 * (int) Math.random());
+//        SliderLixo2.setValue(70 * (int) Math.random());
+//        SliderLixo3.setValue(70 * (int) Math.random());
+//        SliderLixo4.setValue(70 * (int) Math.random());
+//        SliderPolA1.setValue(5 + (int) (350 * Math.random()));
+//        SliderPolA2.setValue(5 + (int) (350 * Math.random()));
+//        SliderPolA3.setValue(5 + (int) (350 * Math.random()));
+//        SliderPolA4.setValue(5 + (int) (350 * Math.random()));
+//        SliderTempA1.setValue(5 + (int) (50 * Math.random()));
+//        SliderTempA2.setValue(5 + (int) (50 * Math.random()));
+//        SliderTempA3.setValue(5 + (int) (50 * Math.random()));
+//        SliderTempA4.setValue(5 + (int) (50 * Math.random()));
+//        SliderUmidA1.setValue(5 + (int) (100 * Math.random()));
+//        SliderUmidA2.setValue(5 + (int) (100 * Math.random()));
+//        SliderUmidA3.setValue(5 + (int) (100 * Math.random()));
+//        SliderUmidA4.setValue(5 + (int) (100 * Math.random()));
+//        SliderVentA1.setValue(5 + (int) (75 * Math.random()));
+//        SliderVentA2.setValue(5 + (int) (75 * Math.random()));
+//        SliderVentA3.setValue(5 + (int) (75 * Math.random()));
+//        SliderVentA4.setValue(5 + (int) (75 * Math.random()));
+
+    }//GEN-LAST:event_jButton1ActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -1288,16 +1380,22 @@ public class Sensores extends javax.swing.JFrame {
                 if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Sensores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sensores.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Sensores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sensores.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Sensores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sensores.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Sensores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sensores.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -1353,6 +1451,7 @@ public class Sensores extends javax.swing.JFrame {
     private javax.swing.JSlider SliderVentA2;
     private javax.swing.JSlider SliderVentA3;
     private javax.swing.JSlider SliderVentA4;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

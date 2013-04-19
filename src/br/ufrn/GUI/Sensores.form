@@ -32,14 +32,25 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel4" min="-2" pref="212" max="-2" attributes="0"/>
           </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="387" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel3" alignment="0" pref="840" max="32767" attributes="0"/>
-          <Component id="jPanel2" alignment="0" pref="840" max="32767" attributes="0"/>
-          <Component id="jPanel1" alignment="0" pref="840" max="32767" attributes="0"/>
-          <Component id="jPanel4" alignment="1" pref="840" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="jPanel4" alignment="0" pref="840" max="32767" attributes="0"/>
+                  <Component id="jPanel1" alignment="0" pref="840" max="32767" attributes="0"/>
+                  <Component id="jPanel2" alignment="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="jPanel3" alignment="0" pref="840" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jButton1" pref="32" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -190,9 +201,8 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA1">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="50"/>
-            <Property name="maximum" type="int" value="300"/>
-            <Property name="minorTickSpacing" type="int" value="25"/>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -227,8 +237,9 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA1">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="20"/>
-            <Property name="minorTickSpacing" type="int" value="10"/>
+            <Property name="majorTickSpacing" type="int" value="10"/>
+            <Property name="maximum" type="int" value="50"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -517,9 +528,8 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA2">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="50"/>
-            <Property name="maximum" type="int" value="300"/>
-            <Property name="minorTickSpacing" type="int" value="25"/>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -554,8 +564,9 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA2">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="20"/>
-            <Property name="minorTickSpacing" type="int" value="10"/>
+            <Property name="majorTickSpacing" type="int" value="10"/>
+            <Property name="maximum" type="int" value="50"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -843,9 +854,8 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA3">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="50"/>
-            <Property name="maximum" type="int" value="300"/>
-            <Property name="minorTickSpacing" type="int" value="25"/>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -880,8 +890,9 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA3">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="20"/>
-            <Property name="minorTickSpacing" type="int" value="10"/>
+            <Property name="majorTickSpacing" type="int" value="10"/>
+            <Property name="maximum" type="int" value="50"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -1169,9 +1180,8 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA4">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="50"/>
-            <Property name="maximum" type="int" value="300"/>
-            <Property name="minorTickSpacing" type="int" value="25"/>
+            <Property name="majorTickSpacing" type="int" value="20"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -1206,8 +1216,9 @@
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA4">
           <Properties>
-            <Property name="majorTickSpacing" type="int" value="20"/>
-            <Property name="minorTickSpacing" type="int" value="10"/>
+            <Property name="majorTickSpacing" type="int" value="10"/>
+            <Property name="maximum" type="int" value="50"/>
+            <Property name="minorTickSpacing" type="int" value="5"/>
             <Property name="paintLabels" type="boolean" value="true"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -1349,5 +1360,13 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Randomizar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>
