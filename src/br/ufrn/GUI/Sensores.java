@@ -107,9 +107,8 @@ public class Sensores extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("AREA 1"));
         jPanel1.setPreferredSize(new java.awt.Dimension(250, 300));
 
-        SliderPolA1.setMajorTickSpacing(50);
-        SliderPolA1.setMaximum(350);
-        SliderPolA1.setMinorTickSpacing(25);
+        SliderPolA1.setMajorTickSpacing(20);
+        SliderPolA1.setMinorTickSpacing(10);
         SliderPolA1.setPaintLabels(true);
         SliderPolA1.setPaintTicks(true);
         SliderPolA1.setValue(25);
@@ -138,7 +137,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA1.setPaintLabels(true);
         SliderFluxA1.setPaintTicks(true);
         SliderFluxA1.setToolTipText("");
-        SliderFluxA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderFluxA1StateChanged(evt);
@@ -329,12 +328,13 @@ public class Sensores extends javax.swing.JFrame {
                 .addComponent(jSliderAgenteA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        SliderFluxA1.getAccessibleContext().setAccessibleName("Fluxo de veículos (veículos por minuto)");
+
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("AREA 2"));
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 300));
 
-        SliderPolA2.setMajorTickSpacing(50);
-        SliderPolA2.setMaximum(350);
-        SliderPolA2.setMinorTickSpacing(25);
+        SliderPolA2.setMajorTickSpacing(20);
+        SliderPolA2.setMinorTickSpacing(10);
         SliderPolA2.setPaintLabels(true);
         SliderPolA2.setPaintTicks(true);
         SliderPolA2.setValue(25);
@@ -363,7 +363,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA2.setPaintLabels(true);
         SliderFluxA2.setPaintTicks(true);
         SliderFluxA2.setToolTipText("");
-        SliderFluxA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA2.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderFluxA2StateChanged(evt);
@@ -550,17 +550,18 @@ public class Sensores extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ComboBoxAge2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addGap(21, 21, 21)
+                .addGap(18, 18, 18)
                 .addComponent(jSliderAgenteA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
+        SliderFluxA2.getAccessibleContext().setAccessibleName("Fluxo de veículos (veículos por minuto)");
+
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("AREA 3"));
         jPanel3.setPreferredSize(new java.awt.Dimension(250, 300));
 
-        SliderPolA3.setMajorTickSpacing(50);
-        SliderPolA3.setMaximum(350);
-        SliderPolA3.setMinorTickSpacing(25);
+        SliderPolA3.setMajorTickSpacing(20);
+        SliderPolA3.setMinorTickSpacing(10);
         SliderPolA3.setPaintLabels(true);
         SliderPolA3.setPaintTicks(true);
         SliderPolA3.setValue(25);
@@ -589,7 +590,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA3.setPaintLabels(true);
         SliderFluxA3.setPaintTicks(true);
         SliderFluxA3.setToolTipText("");
-        SliderFluxA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA3.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderFluxA3StateChanged(evt);
@@ -780,12 +781,13 @@ public class Sensores extends javax.swing.JFrame {
                 .addComponent(jSliderAgenteA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        SliderFluxA3.getAccessibleContext().setAccessibleName("Fluxo de veículos (veículos por minuto)");
+
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("AREA 4"));
         jPanel4.setPreferredSize(new java.awt.Dimension(250, 300));
 
-        SliderPolA4.setMajorTickSpacing(50);
-        SliderPolA4.setMaximum(350);
-        SliderPolA4.setMinorTickSpacing(25);
+        SliderPolA4.setMajorTickSpacing(20);
+        SliderPolA4.setMinorTickSpacing(10);
         SliderPolA4.setPaintLabels(true);
         SliderPolA4.setPaintTicks(true);
         SliderPolA4.setValue(25);
@@ -814,7 +816,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA4.setPaintLabels(true);
         SliderFluxA4.setPaintTicks(true);
         SliderFluxA4.setToolTipText("");
-        SliderFluxA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA4.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderFluxA4StateChanged(evt);
@@ -1005,6 +1007,8 @@ public class Sensores extends javax.swing.JFrame {
                 .addComponent(jSliderAgenteA4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        SliderFluxA4.getAccessibleContext().setAccessibleName("Fluxo de veículos (veículos por minuto)");
+
         jButton1.setText("Randomizar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1024,20 +1028,21 @@ public class Sensores extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(387, 387, 387)
-                .addComponent(jButton1))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton1)
+                .addGap(385, 385, 385))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
