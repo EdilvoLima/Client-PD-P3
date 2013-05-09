@@ -108,6 +108,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA1.setMajorTickSpacing(20);
+        SliderPolA1.setMaximum(120);
         SliderPolA1.setMinorTickSpacing(10);
         SliderPolA1.setPaintLabels(true);
         SliderPolA1.setPaintTicks(true);
@@ -215,12 +216,11 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderLixo1.setMajorTickSpacing(30);
-        SliderLixo1.setMaximum(250);
-        SliderLixo1.setMinorTickSpacing(15);
+        SliderLixo1.setMajorTickSpacing(20);
+        SliderLixo1.setMinorTickSpacing(10);
         SliderLixo1.setPaintLabels(true);
         SliderLixo1.setPaintTicks(true);
-        SliderLixo1.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo1.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo (%)"));
         SliderLixo1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderLixo1StateChanged(evt);
@@ -334,6 +334,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA2.setMajorTickSpacing(20);
+        SliderPolA2.setMaximum(120);
         SliderPolA2.setMinorTickSpacing(10);
         SliderPolA2.setPaintLabels(true);
         SliderPolA2.setPaintTicks(true);
@@ -441,12 +442,11 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderLixo2.setMajorTickSpacing(30);
-        SliderLixo2.setMaximum(250);
-        SliderLixo2.setMinorTickSpacing(15);
+        SliderLixo2.setMajorTickSpacing(20);
+        SliderLixo2.setMinorTickSpacing(10);
         SliderLixo2.setPaintLabels(true);
         SliderLixo2.setPaintTicks(true);
-        SliderLixo2.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo2.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo (%)"));
         SliderLixo2.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderLixo2StateChanged(evt);
@@ -561,6 +561,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA3.setMajorTickSpacing(20);
+        SliderPolA3.setMaximum(120);
         SliderPolA3.setMinorTickSpacing(10);
         SliderPolA3.setPaintLabels(true);
         SliderPolA3.setPaintTicks(true);
@@ -668,12 +669,11 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderLixo3.setMajorTickSpacing(30);
-        SliderLixo3.setMaximum(250);
-        SliderLixo3.setMinorTickSpacing(15);
+        SliderLixo3.setMajorTickSpacing(20);
+        SliderLixo3.setMinorTickSpacing(10);
         SliderLixo3.setPaintLabels(true);
         SliderLixo3.setPaintTicks(true);
-        SliderLixo3.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo3.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo (%)"));
         SliderLixo3.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderLixo3StateChanged(evt);
@@ -787,6 +787,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel4.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA4.setMajorTickSpacing(20);
+        SliderPolA4.setMaximum(120);
         SliderPolA4.setMinorTickSpacing(10);
         SliderPolA4.setPaintLabels(true);
         SliderPolA4.setPaintTicks(true);
@@ -894,12 +895,11 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
-        SliderLixo4.setMajorTickSpacing(30);
-        SliderLixo4.setMaximum(250);
-        SliderLixo4.setMinorTickSpacing(15);
+        SliderLixo4.setMajorTickSpacing(20);
+        SliderLixo4.setMinorTickSpacing(10);
         SliderLixo4.setPaintLabels(true);
         SliderLixo4.setPaintTicks(true);
-        SliderLixo4.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo4.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo (%)"));
         SliderLixo4.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderLixo4StateChanged(evt);
@@ -1038,7 +1038,7 @@ public class Sensores extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 800, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
