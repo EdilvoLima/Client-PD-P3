@@ -6,6 +6,7 @@ package br.ufrn.GUI;
 
 import br.ufrn.controlers.UpdateWeather;
 import br.ufrn.controlers.ConcreteUpdateWeather;
+import javax.swing.plaf.SliderUI;
 
 /**
  *
@@ -14,6 +15,7 @@ import br.ufrn.controlers.ConcreteUpdateWeather;
 public class Sensores extends javax.swing.JFrame {
 
     random setaValores;
+    
 
     /**
      * Creates new form Sensores
@@ -68,7 +70,9 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA1.setPaintTicks(true);
         SliderFluxA1.setSnapToTicks(true);
         SliderFluxA1.setToolTipText("");
+        SliderFluxA1.setValue(70);
         SliderFluxA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
+        SliderFluxA1.setName(""); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -76,14 +80,14 @@ public class Sensores extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SliderPolA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SliderFluxA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SliderFluxA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SliderPolA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(SliderPolA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(SliderPolA1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(SliderFluxA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(829, 829, 829))
