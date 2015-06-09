@@ -6,7 +6,7 @@ package br.ufrn.GUI;
 
 /**
  *
- * @author Pedro
+ * @author Edilvo
  */
 public class random {
 

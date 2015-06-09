@@ -6,36 +6,36 @@ package br.ufrn.controlers;
 
 /**
  *
- * @author Jorge
+ * @author Edilvo
  */
 public class testes {
     
     public static void main(String[] args) throws InterruptedException {
         
-        AtualizarInformacoesDeContexto atualizar = new ConcreteAtualizarInformaçõesDeContexto();
+        UpdateWeather atualizar = new ConcreteUpdateWeather();
         
-        atualizar.atualizarAgenteProximo(3, "jhon");
+        atualizar.updateWeather(28, 25, 25, 30, 33, 43);
         Thread.sleep(15000);
-        atualizar.atualizarFluxoDeVeiculos(3, 250);
+        atualizar.updateWeather(87, 22, 25, 30, 33, 21);
         Thread.sleep(1500);
-        atualizar.atualizarHumidade(3, 80);
+        atualizar.updateWeather(5, 22, 25, 30, 67, 80);
         Thread.sleep(1500);
-        atualizar.atualizarDistanciaAgente(3, 0);
-        atualizar.atualizarIncidenciaDeIncendio(3, 1);
+        atualizar.updateWeather(28, 22, 25, 30, 59, 34);
+        atualizar.updateWeather(28, 21, 25, 49, 33, 90);
         Thread.sleep(3000);
-        atualizar.atualizarIndicePoluicao(3, 330);
+        atualizar.updateWeather(28, 27, 25, 30, 78, 50);
         Thread.sleep(1500);
-        atualizar.atualizarProbalidadeChuva(3, 80);
+        atualizar.updateWeather(28, 19, 21, 30, 83, 58);
         Thread.sleep(1500);
-        atualizar.atualizarQuantidadeLixo(3, 240);
+        atualizar.updateWeather(34, 27, 25, 30, 33, 89);
         Thread.sleep(3000);
-        atualizar.atualizarQuantidadeRuido(3, 70);
+        atualizar.updateWeather(28, 33, 25, 30, 67, 49);
         Thread.sleep(3000);
-        atualizar.atualizarTemeperatura(3, 18);
+        atualizar.updateWeather(28, 32, 25, 30, 76, 59);
         Thread.sleep(1500);
-        atualizar.atualizarVelociadeDoVento(3, 50);
+        atualizar.updateWeather(28, 27, 25, 55, 80, 66);
         Thread.sleep(1500);
-        atualizar.atualizardirecaoDoVento(3, "leste");
+        atualizar.updateWeather(12, 27, 25, 30, 60, 33);
         
     }
     
