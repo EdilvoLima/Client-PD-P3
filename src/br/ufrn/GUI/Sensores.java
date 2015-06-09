@@ -57,7 +57,9 @@ public class Sensores extends javax.swing.JFrame {
         SliderPolA1.setPaintLabels(true);
         SliderPolA1.setPaintTicks(true);
         SliderPolA1.setSnapToTicks(true);
+        SliderPolA1.setToolTipText("Temperatura 1");
         SliderPolA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
+        SliderPolA1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         SliderPolA1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 SliderPolA1StateChanged(evt);
@@ -69,7 +71,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA1.setPaintLabels(true);
         SliderFluxA1.setPaintTicks(true);
         SliderFluxA1.setSnapToTicks(true);
-        SliderFluxA1.setToolTipText("");
+        SliderFluxA1.setToolTipText("Humidade 1");
         SliderFluxA1.setValue(70);
         SliderFluxA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA1.setName(""); // NOI18N
@@ -93,7 +95,7 @@ public class Sensores extends javax.swing.JFrame {
                 .addGap(829, 829, 829))
         );
 
-        SliderPolA1.getAccessibleContext().setAccessibleName("Temperatura 1");
+        SliderPolA1.getAccessibleContext().setAccessibleName("Temperatura 1"); // NOI18N
         SliderPolA1.getAccessibleContext().setAccessibleDescription("");
         SliderFluxA1.getAccessibleContext().setAccessibleName("Humidade 1");
 
@@ -119,7 +121,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA2.setMinorTickSpacing(10);
         SliderFluxA2.setPaintLabels(true);
         SliderFluxA2.setPaintTicks(true);
-        SliderFluxA2.setToolTipText("");
+        SliderFluxA2.setToolTipText("Humidade 2");
         SliderFluxA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA2.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -157,6 +159,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderPolA3.setMinorTickSpacing(10);
         SliderPolA3.setPaintLabels(true);
         SliderPolA3.setPaintTicks(true);
+        SliderPolA3.setToolTipText("Temperatura 3");
         SliderPolA3.setValue(25);
         SliderPolA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
         SliderPolA3.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -169,7 +172,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA3.setMinorTickSpacing(10);
         SliderFluxA3.setPaintLabels(true);
         SliderFluxA3.setPaintTicks(true);
-        SliderFluxA3.setToolTipText("");
+        SliderFluxA3.setToolTipText("Humidade 3");
         SliderFluxA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por min.)"));
         SliderFluxA3.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
